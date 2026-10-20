@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aryan Kushwaha — developer portfolio / ARYAN.OS">
+  <title>ARYAN.OS — Developer Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="boot-screen" class="boot-screen">
+    <div class="boot-inner">
+      <div class="boot-logo">A</div>
+      <div class="boot-title">ARYAN.OS</div>
+      <div class="boot-sub">developer system</div>
+      <div id="boot-lines" class="boot-lines"></div>
+      <div class="boot-progress"><span id="boot-bar"></span></div>
+      <div id="boot-status" class="boot-status">INITIALIZING...</div>
+    </div>
+  </div>
+
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"><span id="cursor-label"></span></div>
+
+  <header class="topbar">
+    <a class="brand magnetic" href="#" data-cursor="HOME">
+      <span class="brand-mark">A</span>
+      <span><strong>ARYAN.OS</strong><small>developer system</small></span>
+    </a>
+    <div class="system-status"><i></i> SYSTEM ONLINE <b id="clock">00:00:00</b></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span>01</span> DEVELOPER PORTFOLIO / BOOT SEQUENCE</div>
+        <h1>Hi, I'm <em>Aryan</em><br><span>building ideas<br>into interfaces.</span></h1>
+        <p>B.Tech CSE graduate focused on frontend and full-stack web development. I enjoy turning concepts into clean, interactive digital experiences.</p>
+        <div class="hero-actions">
+          <button class="primary magnetic" data-open="projects" data-cursor="OPEN">OPEN PROJECTS ↗</button>
+          <button class="secondary magnetic" data-open="contact" data-cursor="CONTACT">CONTACT ME</button>
+        </div>
+        <div class="hero-meta">HTML / CSS / JS &nbsp;&nbsp; REACT / NODE &nbsp;&nbsp; INDIA</div>
+      </div>
+      <div class="orbital">
+        <canvas id="avatar-3d-canvas" class="avatar-3d-canvas" aria-hidden="true"></canvas>
+        <div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div>
+        <div class="orbital-core avatar-core" aria-label="Stylized 3D portrait of Aryan">
+          <img class="avatar-portrait" src="assets/avatar/aryan-avatar.png" alt="Stylized futuristic portrait of Aryan Kushwaha" draggable="false" />
+          <span class="avatar-glint" aria-hidden="true"></span>
+          <div class="avatar-caption"><strong>ARYAN</strong><small>HOLOGRAPHIC IDENTITY / v13.0</small></div>
+        </div>
+        <span class="orbit-tag tag-front">FRONTEND</span>
+        <span class="orbit-tag tag-creative">CREATIVE</span>
+        <span class="orbit-tag tag-full">FULL STACK</span>
+      </div>
+    </section>
+
+    <section class="apps">
+      <div class="section-label">APPLICATIONS</div>
+      <nav class="dock">
+        <button class="app magnetic" data-open="home" data-cursor="HOME"><span>⌂</span><small>Home</small></button>
+        <button class="app magnetic" data-open="about" data-cursor="ABOUT"><span>◉</span><small>About</small></button>
+        <button class="app magnetic" data-open="skills" data-cursor="SKILLS"><span>ϟ</span><small>Skills</small></button>
+        <button class="app magnetic" data-open="projects" data-cursor="PROJECTS"><span>▣</span><small>Projects</small></button>
+        <button class="app magnetic" data-open="terminal" data-cursor="EXECUTE"><span>&gt;_</span><small>Terminal</small></button>
+        <button class="app magnetic active" data-open="contact" data-cursor="CONTACT"><span>✉</span><small>Contact</small></button>
+      </nav>
+    </section>
+
+    <section class="terminal-preview">
+      <div class="terminal-head"><span class="lights"><i></i><i></i><i></i></span><span>terminal</span><small>~/aryan</small></div>
+      <div class="terminal-body">
+        <div><b>aryan@portfolio:~$</b> help</div>
+        <div class="muted">Available: about · skills · projects · contact · github · linkedin</div>
+        <button class="terminal-open magnetic" data-open="terminal" data-cursor="EXECUTE">OPEN TERMINAL ↗</button>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>ARYAN.OS © 2026</span><span>BUILT WITH HTML · CSS · JAVASCRIPT</span><span>WEB DEVELOPMENT PORTFOLIO</span></footer>
+
+  <div id="modal-backdrop" class="modal-backdrop hidden">
+    <div class="window" id="window" role="dialog" aria-modal="true" aria-labelledby="window-title">
+      <div class="window-bar">
+        <div class="lights"><i></i><i></i><i></i></div>
+        <span id="window-title">application</span>
+        <button id="window-close" class="close magnetic" data-cursor="CLOSE">×</button>
+      </div>
+      <div id="window-content" class="window-content"></div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script type="module" src="js/avatar3d.js"></script>
+</body>
+</html>
